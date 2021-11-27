@@ -59,13 +59,17 @@ table {
   }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: white;
+    text-decoration: none;
 }
-
 
 :root {
     --violet: hsl(257, 40%, 49%);
     --soft-magenta: hsl(300, 69%, 71%);
+}
+
+.attribution a:hover, .attribution a:active {
+    color: var(--soft-magenta);
 }
 
 body {
@@ -109,6 +113,7 @@ main img {
 
 main header {
     padding: 4.5rem 0;
+    padding-bottom: 1.6rem;
 }
 
 header p {
@@ -122,18 +127,34 @@ button {
     display: block;
     margin: 0.5rem auto;
     padding: 0.7em 6em;
+    border: none;
     border-radius: 2em;
     color: var(--violet);
+}
+
+button:hover, button:active {
+    color: white;
+    background-color: var(--soft-magenta);
 }
 
 footer div {
     display: flex;
     justify-content: center;
+    padding-bottom: 1.4rem;
 }
 
-footer div a {
+div a {
     border: solid white 0.1em;
     border-radius: 50%;
     padding: 0.35em 0.4em;
     margin: 0.4em;
+}
+
+div a:hover, div a:active {
+    color: black;
+    border-color: var(--soft-magenta);
+}
+
+a:hover > svg, a:active > svg{
+    fill: var(--soft-magenta);
 }
