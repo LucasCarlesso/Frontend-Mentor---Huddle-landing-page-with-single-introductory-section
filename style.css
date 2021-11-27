@@ -49,7 +49,9 @@ table {
 
 /* End of CSS reset */
 
-/* styles suggest by Frontend Mentor */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 
 .attribution {
     font-size: 11px;
@@ -60,7 +62,6 @@ table {
     color: hsl(228, 45%, 44%);
 }
 
-/* Personal styles */
 
 :root {
     --violet: hsl(257, 40%, 49%);
@@ -68,17 +69,71 @@ table {
 }
 
 body {
-    background-color: var(--violet);
+    background: no-repeat url(images/bg-mobile.svg), var(--violet);
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    margin: 0 2rem;
+    color: #fff;
 }
 
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    text-align: center;
 }
 
 button {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+}
+
+header {
+    padding: 2rem 0px;
+}
+
+header img {
+    width: 8.21rem;
+}
+
+main {
+    padding: 1.7rem 0;
+}
+main img {
+    display: block;
+    width: 100%;
+    margin: none auto;
+    padding: 0 0.4rem;
+}
+
+main header {
+    padding: 4.5rem 0;
+}
+
+header p {
+    text-align: center;
+    line-height: 1.5em;
+    padding: 1.3rem 0;
+    
+}
+
+button {
+    display: block;
+    margin: 0.5rem auto;
+    padding: 0.7em 6em;
+    border-radius: 2em;
+    color: var(--violet);
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer div a {
+    border: solid white 0.1em;
+    border-radius: 50%;
+    padding: 0.35em 0.4em;
+    margin: 0.4em;
 }
