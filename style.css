@@ -158,3 +158,25 @@ div a:hover, div a:active {
 a:hover > svg, a:active > svg{
     fill: var(--soft-magenta);
 }
+
+@media (min-width: 1000px) {
+    body {
+        background: no-repeat url(images/bg-desktop.svg), var(--violet);
+        margin: 0 4rem;
+    }
+    
+    header img {
+        width: 200px;
+    }
+    
+    main {
+        display: flex;
+    }
+    
+    main header {
+        width: 47rem;
+    }
+    footer div {
+        justify-content: right;
+    }
+}
