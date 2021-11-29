@@ -201,6 +201,7 @@ a:hover > svg, a:active > svg{
     
     footer div {
         justify-content: right;
+        padding-bottom: 0px;
     }
     
     svg {
