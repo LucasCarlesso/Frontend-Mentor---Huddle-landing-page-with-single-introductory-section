@@ -106,7 +106,7 @@ main {
 }
 main img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     margin: none auto;
     padding: 0 0.4rem;
 }
@@ -166,6 +166,8 @@ a:hover > svg, a:active > svg{
     }
     
     header img {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
         width: 200px;
     }
     
@@ -174,9 +176,39 @@ a:hover > svg, a:active > svg{
     }
     
     main header {
-        width: 47rem;
+        text-align: left;
+        margin-left: 3rem;
+        padding-top: 2.5rem;
     }
+    
+    h1 {
+        text-align: left;
+        font-size: 2.6rem;
+    }
+    
+    header p {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+    
+    button {
+        display: inline;
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 0.6em 3.5em;
+        
+    }
+    
     footer div {
         justify-content: right;
+    }
+    
+    svg {
+        width: 25px;
+        height: 25px;
+    }
+    
+    div a {
+        padding: 0.7em;
     }
 }
