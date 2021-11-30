@@ -74,10 +74,34 @@ table {
 
 body {
     background: no-repeat url(images/bg-mobile.svg), var(--violet);
+    background-size: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     margin: 0 2rem;
     color: #fff;
+}
+
+header {
+    padding: 2rem 0px;
+}
+
+.huddle-logo {
+    width: 8.21rem;
+}
+
+main {
+    padding: 1.7rem 0;
+}
+main img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 0.4rem;
+}
+
+main header {
+    padding: 4.5rem 0;
+    padding-bottom: 1.6rem;
 }
 
 h1 {
@@ -88,34 +112,6 @@ h1 {
     text-align: center;
 }
 
-button {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
-
-header {
-    padding: 2rem 0px;
-}
-
-header img {
-    width: 8.21rem;
-}
-
-main {
-    padding: 1.7rem 0;
-}
-main img {
-    display: block;
-    max-width: 100%;
-    margin: none auto;
-    padding: 0 0.4rem;
-}
-
-main header {
-    padding: 4.5rem 0;
-    padding-bottom: 1.6rem;
-}
-
 header p {
     text-align: center;
     line-height: 1.5em;
@@ -124,6 +120,8 @@ header p {
 }
 
 button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     display: block;
     margin: 0.5rem auto;
     padding: 0.7em 6em;
@@ -159,13 +157,14 @@ a:hover > svg, a:active > svg{
     fill: var(--soft-magenta);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
     body {
         background: no-repeat url(images/bg-desktop.svg), var(--violet);
+        background-size: 100% 100%;
         margin: 0 4rem;
     }
     
-    header img {
+    .huddle-logo {
         margin-top: 2rem;
         margin-bottom: 1rem;
         width: 200px;
@@ -175,6 +174,10 @@ a:hover > svg, a:active > svg{
         display: flex;
     }
     
+    main img {
+        max-width: 60%;
+    }
+
     main header {
         text-align: left;
         margin-left: 3rem;
@@ -186,7 +189,7 @@ a:hover > svg, a:active > svg{
         font-size: 2.6rem;
     }
     
-    header p {
+    .subtitle {
         font-size: 1.1rem;
         text-align: left;
     }
@@ -204,7 +207,7 @@ a:hover > svg, a:active > svg{
         padding-bottom: 0px;
     }
     
-    svg {
+    footer svg {
         width: 25px;
         height: 25px;
     }
